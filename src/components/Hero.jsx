@@ -111,7 +111,7 @@ function Hero() {
                 rel='noopener noreferrer'
                 className='bg-gradient-to-r from-slate-800 to-slate-900 rounded-full p-4 text-sm text-stone-300 mb-10'
               >
-                See Europass Profile
+                Europass Profile
               </a>
             </Motion.div>
           </Motion.div>
