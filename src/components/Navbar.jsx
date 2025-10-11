@@ -129,7 +129,6 @@ function Navbar() {
                 </a>
               );
             })}
-            <div className='mt-6'></div>
           </div>
         </div>
       </div>
