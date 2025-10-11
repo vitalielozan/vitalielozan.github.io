@@ -23,12 +23,12 @@ export const SOCIAL_LINK = [
   {
     icon: FaFacebook,
     color: 'from-sky-600 to-sky-700',
-    href: 'https://www.facebook.com/',
+    href: 'https://www.facebook.com/VitalLozan/',
   },
   {
     icon: FaInstagram,
     color: 'from-pink-600 to-purple-600',
-    href: 'https://www.instagram.com/',
+    href: 'https://www.instagram.com/vitallozan/',
   },
 ];
 
