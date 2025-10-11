@@ -106,7 +106,7 @@ function Hero() {
                 Download Resume
               </a>
               <a
-                href='https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/vitalie-lozan/9fa40df3-375f-444f-80dc-e3a199440e80?view=html'
+                href='https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/vitalie-lozan/5c1f85af-9e5f-4c32-ba44-28b1d5360101?view=html'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='bg-gradient-to-r from-slate-800 to-slate-900 rounded-full p-4 text-sm text-stone-300 mb-10'
