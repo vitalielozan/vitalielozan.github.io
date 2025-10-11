@@ -89,7 +89,7 @@ export const PROJECTS = [
     description:
       'A Movie App is a lightweight React project that lets users search for movies via a public API and save favorites locally using localStorage. Built with Vite, deployed on Render, and no backend needed!',
     technologies: ['HTML', 'CSS', 'Javascript', 'React', 'Tailwind'],
-    demoUrl: 'https://movie-app-9sl0.onrender.com/',
+    demoUrl: 'https://movie-app-mocha-xi.vercel.app/',
     githubUrl: 'https://github.com/vitalielozan/Movie-App',
   },
   {
