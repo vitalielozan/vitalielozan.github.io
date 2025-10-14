@@ -57,7 +57,7 @@ function Navbar() {
           : 'py-6 bg-transparent border-transparent'
       )}
     >
-      <div className='container flex items-center justify-around relative'>
+      <div className='container flex items-center justify-between lg:justify-around relative'>
         <a href={navItems[0].href} aria-label='Home'>
           <img
             src={logo}
@@ -73,6 +73,7 @@ function Navbar() {
             return (
               <a
                 href={item.href}
+                aria-label={item.ariaLabel}
                 key={key}
                 className={clsx(
                   'text-md font-medium transition-all duration-300',

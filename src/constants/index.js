@@ -9,7 +9,7 @@ import project6 from '@/assets/projects/project6.webp';
 
 export const HERO_CONTENT = `I am a curious and passionate aspiring full stack developer, currently diving deep into front-end development. Although I studied microelectronics back in 1999, it wasn't until 2024 that I realized software development is truly my calling. I'm all in now — and loving the journey.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const SOCIAL_LINK = [
   {
@@ -39,7 +39,7 @@ export const EXPERIENCES = [
     role: 'Aspiring Network Engineering & Cybersecurity',
     company: 'Cisco Networking Academy',
     description:
-      'Currently enrolled in the Cisco Networking Academy, where I am building a strong foundation in network engineering and cybersecurity. I am gaining hands-on experience with network configuration using CLI, simulating network topologies in Cisco Packet Tracer, and learning core concepts in routing, switching, and network security. I also work with Linux systems and explore network automation using Python. This program is preparing me for the CCNA certification and a future career in IT infrastructure and security.',
+      'Currently enrolled in the Cisco Networking Academy, where I am learning a strong foundation in network engineering and cybersecurity. I am gaining hands-on experience with network configuration using CLI, simulating network topologies in Cisco Packet Tracer, and learning core concepts in routing, switching, and network security. I also work with Linux systems and explore network automation using Python. This program is preparing me for the CCNA certification and a future career in IT infrastructure and security.',
     technologies: ['CCNA', 'LINUX', 'CLI', 'Cisco Packet Tracer', 'PYTHON'],
   },
   {
@@ -145,9 +145,9 @@ export const CONTACT = {
 };
 
 export const navItems = [
-  { name: 'Home', href: '#hero' },
-  { name: 'Technologies', href: '#technologies' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Home', href: '#hero', ariaLabel: 'Home' },
+  { name: 'Technologies', href: '#technologies', ariaLabel: 'Technologies' },
+  { name: 'Projects', href: '#projects', ariaLabel: 'Projects' },
+  { name: 'Experience', href: '#experience', ariaLabel: 'Experience' },
+  { name: 'Contact', href: '#contact', ariaLabel: 'Contact' },
 ];
