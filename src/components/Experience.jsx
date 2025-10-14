@@ -23,7 +23,7 @@ function Experience() {
                 transition={{ duration: 1 }}
                 className='w-full lg:w-1/4'
               >
-                <p className='mb-2 text-sm text-stone-400'>{experience.year}</p>
+                <p className='mb-2 text-xl text-stone-400'>{experience.year}</p>
               </Motion.div>
               <Motion.div
                 whileInView={{ opacity: 1, x: 0 }}

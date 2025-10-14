@@ -57,7 +57,7 @@ function Navbar() {
           : 'py-6 bg-transparent border-transparent'
       )}
     >
-      <div className='container flex items-center justify-between relative'>
+      <div className='container flex items-center justify-around relative'>
         <a href={navItems[0].href} aria-label='Home'>
           <img
             src={logo}
@@ -67,7 +67,7 @@ function Navbar() {
         </a>
 
         {/* dsktop nav */}
-        <div className='hidden md:flex items-center space-x-6'>
+        <div className='hidden md:flex items-center space-x-8'>
           {navItems.map((item, key) => {
             const isActive = activeSection === item.href.replace('#', '');
             return (
