@@ -2,11 +2,10 @@ import React from 'react';
 import { DiRedis } from 'react-icons/di';
 import { FaBootstrap, FaNodeJs } from 'react-icons/fa';
 import { RiReactjsLine, RiTailwindCssFill } from 'react-icons/ri';
-import { SiDocker, SiMongodb } from 'react-icons/si';
+import { SiMongodb } from 'react-icons/si';
 import { TbBrandJavascript } from 'react-icons/tb';
 import { motion as Motion } from 'framer-motion';
 import { FcLinux } from 'react-icons/fc';
-import { IoLogoSass } from 'react-icons/io';
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -94,22 +93,6 @@ function Technologies() {
             className='p-4'
           >
             <FaBootstrap className='text-7xl text-violet-600' />
-          </Motion.div>
-          <Motion.div
-            initial='initial'
-            animate='animate'
-            variants={iconVariants(4)}
-            className='p-4'
-          >
-            <IoLogoSass className='text-7xl text-pink-500' />
-          </Motion.div>
-          <Motion.div
-            initial='initial'
-            animate='animate'
-            variants={iconVariants(3.5)}
-            className='p-4'
-          >
-            <SiDocker className='text-7xl text-sky-700' />
           </Motion.div>
         </Motion.div>
       </div>
