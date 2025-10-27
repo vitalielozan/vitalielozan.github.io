@@ -133,7 +133,7 @@ export const PROJECTS = [
     description:
       'Spedition Protengeier is a sleek and responsive web application developed for a logistics and transportation company, built using React, JavaScript, HTML, CSS, and Tailwind CSS. The platform serves as a digital front for showcasing the companyes services, fleet, contact details, and operational values, with a focus on clarity, speed, and modern design.',
     technologies: ['HTML', 'CSS', 'Javascript', 'React', 'Tailwind'],
-    demoUrl: 'https://spedition-prottengeier.vercel.app/',
+    demoUrl: 'https://spedition-prottengeier.onrender.com',
     githubUrl: 'https://github.com/vitalielozan/Spedition-Prottengeier',
   },
 ];
