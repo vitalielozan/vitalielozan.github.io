@@ -99,7 +99,7 @@ export const PROJECTS = [
       'MongoDB',
     ],
     demoUrl: 'https://e-shop-mern-app.onrender.com',
-    githubUrl: 'https://github.com/vitalielozan/E-Shop-MERN-App',
+    githubUrl: 'https://github.com/vitalielozan/E-Commerce-MERN-App',
   },
   {
     title: 'Task Management App',
