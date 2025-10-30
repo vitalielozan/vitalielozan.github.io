@@ -98,7 +98,7 @@ export const PROJECTS = [
       'Express.js',
       'MongoDB',
     ],
-    demoUrl: 'https://e-shop-mern-app.onrender.com',
+    demoUrl: 'https://e-commerce-mern-app-jes3.onrender.com/',
     githubUrl: 'https://github.com/vitalielozan/E-Commerce-MERN-App',
   },
   {
