@@ -56,7 +56,7 @@ function Hero() {
                     ? 'noopener noreferrer'
                     : undefined
                 }
-                className={`bg-gradient-to-r p-3 ${social.color} group rounded-2xl text-white shadow-lg transition-all duration-300 hover:shadow-xl`}
+                className={`bg-linear-to-r p-3 ${social.color} group rounded-2xl text-white shadow-lg transition-all duration-300 hover:shadow-xl`}
                 whileHover={{ scale: 1.1, y: -5, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
                 initial={{ opacity: 0, scale: 0 }}
@@ -83,7 +83,7 @@ function Hero() {
             </Motion.h2>
             <Motion.span
               variants={childVariants}
-              className='bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent'
+              className='bg-linear-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent'
             >
               Aspiring Frontend Web Developer
             </Motion.span>
@@ -102,15 +102,15 @@ function Hero() {
                 target='_blank'
                 rel='noopener noreferrer'
                 download
-                className='bg-gradient-to-r from-slate-800 to-slate-900 rounded-full p-4 text-sm text-stone-300 mb-10'
+                className='bg-linear-to-r from-slate-800 to-slate-900 rounded-full p-4 text-sm text-stone-300 mb-10'
               >
                 Download my CV
               </a>
               <a
-                href='https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/vitalie-lozan/89e7057b-03f1-4be3-897b-e7ac5a4648a3?view=html'
+                href='https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/vitalie-lozan/464d15a7-c192-4c48-83bb-b8f767106414?view=html'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='bg-gradient-to-r from-slate-800 to-slate-900 rounded-full p-4 text-sm text-stone-300 mb-10'
+                className='bg-linear-to-r from-slate-800 to-slate-900 rounded-full p-4 text-sm text-stone-300 mb-10'
               >
                 Europass Profile
               </a>
