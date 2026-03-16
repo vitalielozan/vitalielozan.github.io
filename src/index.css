@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap');
+
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --site-bg: 206 52% 7%;
+  --surface: 209 43% 13%;
+  --surface-strong: 208 48% 17%;
+  --brand: 175 82% 47%;
+  --brand-alt: 27 100% 62%;
+  --text: 210 37% 93%;
+  --muted: 207 23% 73%;
+  --line: 205 33% 26%;
+  --success: 144 56% 52%;
+}
+
+@theme {
+  --color-site-bg: hsl(var(--site-bg));
+  --color-surface: hsl(var(--surface));
+  --color-surface-strong: hsl(var(--surface-strong));
+  --color-brand: hsl(var(--brand));
+  --color-brand-alt: hsl(var(--brand-alt));
+  --color-text: hsl(var(--text));
+  --color-muted: hsl(var(--muted));
+  --color-line: hsl(var(--line));
+  --color-success: hsl(var(--success));
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: 'Public Sans', sans-serif;
+    color: hsl(var(--text));
+    background:
+      radial-gradient(
+        circle at 8% 12%,
+        hsl(var(--brand) / 0.16),
+        transparent 34%
+      ),
+      radial-gradient(
+        circle at 92% 8%,
+        hsl(var(--brand-alt) / 0.16),
+        transparent 40%
+      ),
+      linear-gradient(160deg, #040b12 0%, #081420 46%, #07111b 100%);
+    background-attachment: fixed;
+    font-feature-settings:
+      'liga' 1,
+      'calt' 1;
+    line-height: 1.55;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Syne', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    color: #03131a;
+    background: hsl(var(--brand));
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .site-shell {
+    @apply relative min-h-screen overflow-x-clip;
+  }
+
+  .site-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--line) / 0.4) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--line) / 0.4) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: radial-gradient(circle at center, black 36%, transparent 84%);
+    opacity: 0.28;
+  }
+
+  .section-wrap {
+    @apply rounded-4xl border border-line/65 bg-surface/70 p-6 backdrop-blur-sm sm:p-8;
+  }
+
+  .section-kicker {
+    @apply mb-4 inline-flex items-center rounded-full border border-brand/40 bg-brand/10 px-4 py-1 text-xs font-semibold tracking-[0.18em] text-brand uppercase;
+  }
+
+  .section-title {
+    @apply text-3xl leading-tight font-semibold text-text sm:text-4xl lg:text-5xl;
+  }
+
+  .section-lead {
+    @apply mt-4 max-w-3xl text-base text-muted sm:text-lg;
+  }
+
+  .glass-panel {
+    @apply rounded-3xl border border-line/70 bg-surface/75 backdrop-blur-md shadow-[0_20px_70px_-42px_rgba(13,50,80,0.8)];
+  }
+
+  .primary-button {
+    @apply inline-flex items-center justify-center rounded-full bg-brand px-5 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-brand/90;
+  }
+
+  .secondary-button {
+    @apply inline-flex items-center justify-center rounded-full border border-brand-alt/60 bg-brand-alt/10 px-5 py-3 text-sm font-semibold text-brand-alt transition hover:-translate-y-0.5 hover:bg-brand-alt/18;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full border border-line bg-surface-strong/60 px-3 py-1 text-xs font-semibold tracking-wide text-muted;
+  }
+
+  .timeline-item {
+    @apply relative rounded-2xl border border-line/70 bg-surface/75 p-5;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -0.65rem;
+    top: 1.35rem;
+    height: 0.72rem;
+    width: 0.72rem;
+    border-radius: 9999px;
+    background: hsl(var(--brand));
+    box-shadow: 0 0 0 0.25rem hsl(var(--brand) / 0.2);
+  }
+
+  .project-card {
+    @apply overflow-hidden rounded-3xl border border-line/70 bg-surface/80 shadow-[0_16px_60px_-40px_rgba(9,35,54,0.95)] transition duration-300 hover:-translate-y-1;
+  }
+
+  .project-image {
+    @apply h-52 w-full object-cover sm:h-56;
+  }
+}
