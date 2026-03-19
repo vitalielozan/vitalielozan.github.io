@@ -81,7 +81,7 @@ function Technologies() {
         {iconCards.map((card) => (
           <article key={card.name} className='glass-panel rounded-2xl p-4'>
             <div className='flex items-start gap-3'>
-              <div className='rounded-xl border border-line/70 bg-surface-strong/85 p-2.5'>
+              <div className='rounded-xl bg-surface-strong/85 p-2.5 shadow-[inset_0_0_0_1px_hsl(var(--line)/0.42)]'>
                 <card.icon className={`text-3xl ${card.className}`} />
               </div>
               <div>

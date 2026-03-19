@@ -99,11 +99,55 @@
   }
 
   .section-wrap {
-    @apply rounded-4xl border border-line/65 bg-surface/70 p-6 backdrop-blur-sm sm:p-8;
+    @apply relative isolate rounded-4xl px-1 py-5 sm:px-2 sm:py-6;
+  }
+
+  .section-wrap::before {
+    content: '';
+    position: absolute;
+    inset: -0.45rem -0.55rem;
+    border-radius: 2rem;
+    background:
+      radial-gradient(
+        circle at 12% 0%,
+        hsl(var(--brand) / 0.12),
+        transparent 48%
+      ),
+      radial-gradient(
+        circle at 88% 100%,
+        hsl(var(--brand-alt) / 0.12),
+        transparent 54%
+      ),
+      linear-gradient(
+        140deg,
+        hsl(var(--surface) / 0.56),
+        hsl(var(--surface-strong) / 0.38)
+      );
+    box-shadow: 0 30px 80px -62px rgba(2, 12, 22, 0.98);
+    z-index: -2;
+  }
+
+  .section-wrap::after {
+    content: '';
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    bottom: -0.85rem;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(var(--line) / 0.65),
+      transparent
+    );
+  }
+
+  .section-wrap:last-of-type::after {
+    display: none;
   }
 
   .section-kicker {
-    @apply mb-4 inline-flex items-center rounded-full border border-brand/40 bg-brand/10 px-4 py-1 text-xs font-semibold tracking-[0.18em] text-brand uppercase;
+    @apply mb-4 inline-flex items-center rounded-full bg-linear-to-r from-brand/20 to-brand-alt/20 px-4 py-1 text-[0.68rem] font-semibold tracking-[0.18em] text-text uppercase;
   }
 
   .section-title {
@@ -111,33 +155,33 @@
   }
 
   .section-lead {
-    @apply mt-4 max-w-3xl text-base text-muted sm:text-lg;
+    @apply mt-4 max-w-3xl text-base text-muted/95 sm:text-lg;
   }
 
   .glass-panel {
-    @apply rounded-3xl border border-line/70 bg-surface/75 backdrop-blur-md shadow-[0_20px_70px_-42px_rgba(13,50,80,0.8)];
+    @apply rounded-3xl bg-linear-to-br from-surface/90 via-surface/78 to-surface-strong/70 backdrop-blur-md shadow-[0_22px_75px_-48px_rgba(4,22,36,0.95)] ring-1 ring-white/6;
   }
 
   .primary-button {
-    @apply inline-flex items-center justify-center rounded-full bg-brand px-5 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-brand/90;
+    @apply inline-flex items-center justify-center rounded-full bg-linear-to-r from-brand to-brand/86 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:shadow-[0_10px_24px_-14px_hsl(var(--brand)/0.9)];
   }
 
   .secondary-button {
-    @apply inline-flex items-center justify-center rounded-full border border-brand-alt/60 bg-brand-alt/10 px-5 py-3 text-sm font-semibold text-brand-alt transition hover:-translate-y-0.5 hover:bg-brand-alt/18;
+    @apply inline-flex items-center justify-center rounded-full bg-brand-alt/14 px-5 py-3 text-sm font-semibold text-brand-alt shadow-[inset_0_0_0_1px_hsl(var(--brand-alt)/0.45)] transition hover:-translate-y-0.5 hover:bg-brand-alt/24;
   }
 
   .chip {
-    @apply inline-flex items-center rounded-full border border-line bg-surface-strong/60 px-3 py-1 text-xs font-semibold tracking-wide text-muted;
+    @apply inline-flex items-center rounded-full bg-surface-strong/70 px-3 py-1 text-xs font-semibold tracking-wide text-muted shadow-[inset_0_0_0_1px_hsl(var(--line)/0.38)];
   }
 
   .timeline-item {
-    @apply relative rounded-2xl border border-line/70 bg-surface/75 p-5;
+    @apply relative rounded-2xl bg-surface/68 p-5 shadow-[0_18px_55px_-42px_rgba(5,22,35,0.92)] ring-1 ring-white/6;
   }
 
   .timeline-item::before {
     content: '';
     position: absolute;
-    left: -0.65rem;
+    left: -0.82rem;
     top: 1.35rem;
     height: 0.72rem;
     width: 0.72rem;
@@ -147,7 +191,7 @@
   }
 
   .project-card {
-    @apply overflow-hidden rounded-3xl border border-line/70 bg-surface/80 shadow-[0_16px_60px_-40px_rgba(9,35,54,0.95)] transition duration-300 hover:-translate-y-1;
+    @apply overflow-hidden rounded-[1.7rem] bg-linear-to-br from-surface/92 to-surface-strong/76 shadow-[0_22px_68px_-44px_rgba(2,16,28,0.95)] ring-1 ring-white/6 transition duration-300 hover:-translate-y-1;
   }
 
   .project-image {

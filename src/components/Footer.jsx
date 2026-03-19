@@ -33,7 +33,7 @@ function Footer() {
           <button
             onClick={handleScrollToTop}
             title='Scroll to top'
-            className='inline-flex h-9 w-9 items-center justify-center rounded-lg border border-line bg-surface-strong/85 text-brand transition hover:-translate-y-0.5 hover:bg-surface'
+            className='inline-flex h-9 w-9 items-center justify-center rounded-lg bg-surface-strong/85 text-brand shadow-[inset_0_0_0_1px_hsl(var(--line)/0.44)] transition hover:-translate-y-0.5 hover:bg-surface'
             aria-label='Scroll to top'
           >
             <FaArrowUp size={14} />

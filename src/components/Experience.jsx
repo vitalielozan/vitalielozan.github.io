@@ -21,7 +21,7 @@ function Experience() {
         skills that now shape how I design and build digital products.
       </p>
 
-      <div className='mt-8 border-l border-line/75 pl-6'>
+      <div className='relative mt-8 pl-6 before:absolute before:inset-y-0 before:left-0 before:w-px before:bg-linear-to-b before:from-transparent before:via-line/80 before:to-transparent'>
         <div className='grid gap-4'>
           {EXPERIENCES.map((experience) => (
             <article

@@ -113,7 +113,7 @@ function Hero() {
               alt='Portrait of Vitalie Lozan'
               width={640}
               height={640}
-              className='relative z-10 w-full rounded-3xl border border-line/80 object-cover'
+              className='relative z-10 w-full rounded-3xl object-cover shadow-[0_20px_60px_-38px_rgba(4,17,27,0.95)] ring-1 ring-white/8'
             />
           </div>
 

@@ -63,10 +63,10 @@ function Navbar() {
     >
       <nav
         className={clsx(
-          'mx-auto flex w-[calc(100%-1rem)] max-w-6xl items-center justify-between rounded-xl border px-4 py-2.5 sm:w-[calc(100%-2rem)] sm:px-6',
+          'mx-auto flex w-[calc(100%-1rem)] max-w-6xl items-center justify-between rounded-xl px-4 py-2.5 sm:w-[calc(100%-2rem)] sm:px-6',
           isScrolled
-            ? 'border-line bg-surface/92 shadow-[0_18px_48px_-30px_rgba(5,14,22,0.95)] backdrop-blur-md'
-            : 'border-line/75 bg-surface/70 backdrop-blur-sm',
+            ? 'bg-surface/92 shadow-[0_18px_48px_-30px_rgba(5,14,22,0.95)] ring-1 ring-white/8 backdrop-blur-md'
+            : 'bg-surface/70 ring-1 ring-white/6 backdrop-blur-sm',
         )}
       >
         <a href='#hero' aria-label='Home' className='flex items-center gap-3'>
@@ -113,7 +113,7 @@ function Navbar() {
 
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className='inline-flex rounded-lg border border-line bg-surface-strong/80 p-2 text-text md:hidden'
+          className='inline-flex rounded-lg bg-surface-strong/80 p-2 text-text shadow-[inset_0_0_0_1px_hsl(var(--line)/0.45)] md:hidden'
           aria-label={isMenuOpen ? 'Close Menu' : 'Open Menu'}
           aria-expanded={isMenuOpen}
         >
@@ -128,7 +128,7 @@ function Navbar() {
         )}
       >
         <div
-          className='glass-panel rounded-xl border border-line/85 p-4'
+          className='glass-panel rounded-xl p-4'
           role='dialog'
           aria-label='Mobile menu'
         >
